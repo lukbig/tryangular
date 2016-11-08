@@ -11,11 +11,16 @@
 	<script type="text/javascript" src="/js/angular-resource.min.js"></script>
 	<script type="text/javascript" src="/js/angular-route.min.js"></script>
 	
+	<!-- module musi być przed cofiguracja bo najpierw trzeba wczytac moduly zeby mozna bylo korzystac z nich w configuracji :P -->
 	<script src="/js/app/app.module.js"></script>
 	<script src="/js/app/app.config.js"></script>
 
 	<script src="/js/app/blog-list/blog-list.module.js"></script>
 	<script src="/js/app/blog-list/blog-list.component.js"></script>
+
+	<script src="/js/app/core/posts/post.module.js"></script>
+	<script src="/js/app/core/posts/post.service.js"></script>
+
 	<script src="/js/app/blog-detail/blog-detail.module.js"></script>
 	<script src="/js/app/blog-detail/blog-detail.component.js"></script>
 
