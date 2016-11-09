@@ -11,6 +11,7 @@ angular.module('blogDetail').
 			//output is the same
 
 			Post.query(function(data) {
+				$scope.notFound = true;
 				angular.forEach(data, function(post) {
 					if (post.id == $routeParams.id) {
 						$scope.post = post;
@@ -22,6 +23,7 @@ angular.module('blogDetail').
 			// $http.get("/json/posts.json").then(successCallback, errorCallback)
 
 			// function successCallback(response, status, config, statusText) {
+			// $scope.notFound = true;
 			// 	var blogItems = response.data;
 			// 	$scope.posts = blogItems;
 			// 	angular.forEach(blogItems, function(post) {

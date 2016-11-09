@@ -1,12 +1,13 @@
-<!-- <div class=''>
+<div class=''>
 	<h1 class='new-class'>{{title}}</h1>
 	<button ng-click='someClickTest()'>Click me!</button>
-</div> -->
+</div>
 
 <h1>Blog List</h1>
 <ul ng-if='blogItems.length > 0'>
 	<li ng-repeat='item in blogItems'>
-		<a ng-href = '/blog/{{item.id}}'> {{item.title}} </a>
+		<a ng-href = '/blog/{{item.id}}' confirm-click = 'Are you ready?' confirmed-click = '/blog/{{item.id}}'> {{item.title}} </a>
+		<!-- <confirm-click message = 'are you postivie?' eq = '100 + 10' post = 'item'</confirm-click> -->
 	</li>
 </ul>
 
