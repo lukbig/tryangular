@@ -1,5 +1,10 @@
 [
-	{"title": "some title1", "id": 1, "description": "this is a book"},
+	{"title": "New item", "id": 1, "description": "this is a book",
+		"comments" : [
+			{"id" : 1, "text" : "Nice book"},
+			{"id" : 2, "text" : "Another comment"}
+		]
+	},
 	{"title": "some title2", "id": 2, "description": "this is a book"},
 	{"title": "some title3", "id": 3, "description": "this is a book"},
 	{"title": "some title4", "id": 4, "description": "this is a book"}

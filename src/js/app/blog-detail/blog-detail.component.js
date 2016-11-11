@@ -16,9 +16,30 @@ angular.module('blogDetail').
 					if (post.id == $routeParams.id) {
 						$scope.post = post;
 						$scope.notFound = false;
+						resetReply();
 					}
 				})
 			})
+
+			$scope.deleteComment = function(comment) {
+				$scope.$apply(
+					$scope.post.comments.splice(comment, 1)
+				)
+			}
+
+			function resetReply() {
+				$scope.reply = {
+					"id" : $scope.post.comments.length + 1,
+					"text" : "",
+				}
+			}
+
+			$scope.addReply = function() {
+				console.log($scope.reply)
+
+				$scope.post.comments.push($scope.reply);
+				resetReply();
+			}
 
 			// $http.get("/json/posts.json").then(successCallback, errorCallback)
 

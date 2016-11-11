@@ -8,6 +8,10 @@ angular.module('confirmClick').
 				var msg = scope.message || "Are you sure?"
 				var clickAction = attr.confirmedClick;
 				element.bind("click", function(event) {
+
+					event.stopImmediatePropagation();
+					event.preventDefault();
+
 					if (window.confirm(msg)) {
 						scope.$eval(clickAction)
 					}
