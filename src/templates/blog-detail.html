@@ -1,14 +1,25 @@
-<h1> {{post.title}} </h1>
+<div class="row">
+<div class="col-sm-8 col-sm-offset-2">
 
+<div class="page-header">
+  <h1>{{post.title}}  <small>{{post.id}}</small></h1>
+</div>
+
+<p> {{post.title}} </p>
 <p> {{post.id}} </p>
-
 <p> {{post.description}} </p>
 
+<hr/>
+
 <h3>Comments</h3>
+
+<div class="row">
+	<div class="col-sm-6">
+		<input class="form-control" type="text" ng-model='query' placeholder="filter comments">
+	</div>
+</div>
+
 <ul>
-	<li>
-		<input type="text" ng-model='query' placeholder="filter comments">
-	</li>
 	<li ng-repeat='comment in post.comments | filter : query'>
 		{{comment.text}}
 		<a href='#' confirm-click="do you want to delete?" confirmed-click = 'deleteComment(comment)'>Confirm</a>
@@ -16,9 +27,18 @@
 	</li>
 </ul>
 
-<p style="color:red" ng-if='reply.text'>Preview: {{reply.text}}</p>
-<form ng-submit='addReply()'>
-	<input type="hidden" ng-model='reply.id' value="5">
-	<textarea ng-model='reply.text'></textarea>
-	<input type="submit">
-</form>
+<hr/>
+
+<div class="row">
+	<div class="col-sm-6">
+		<p style="color:red" ng-if='reply.text'>Preview: {{reply.text}}</p>
+		<form ng-submit='addReply()'>
+			<input type="hidden" ng-model='reply.id' value="5">
+			<textarea class="form-control" ng-model='reply.text'></textarea>
+			<input class="btn btn-default" type="submit">
+		</form>
+	</div>
+</div>
+
+</div>
+</div>

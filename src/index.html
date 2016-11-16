@@ -7,6 +7,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Try angular 1.5</title>
 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<style>
+	.new-class {
+		font-size: 72px;
+	}
+	.other-class {
+		font-size: 32px;
+	}
+	</style>
+</head>
+
+<body>
+	<nav class='container'>
+	<h1>Us</h1>
+	</nav>
+
+	<div class='container' ng-view>
+		
+	</div>
+
+	<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
 	<script type="text/javascript" src="/js/angular.min.js"></script>
 	<script type="text/javascript" src="/js/angular-resource.min.js"></script>
 	<script type="text/javascript" src="/js/angular-route.min.js"></script>
@@ -26,22 +50,6 @@
 
 	<script src="/js/app/utils/confirm-click/confirm-click.module.js"></script>
 	<script src="/js/app/utils/confirm-click/confirm-click.directive.js"></script>
-
-	<style>
-	.new-class {
-		font-size: 72px;
-	}
-	.other-class {
-		font-size: 32px;
-	}
-	</style>
-</head>
-
-<body>
-	<h1>Us</h1>
-	<div ng-view>
-		
-	</div>
 </body>
 
 </html>
