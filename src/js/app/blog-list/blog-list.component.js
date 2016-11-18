@@ -6,6 +6,7 @@ angular.module('blogList').
 		templateUrl: '/templates/blog-list.html',
 		controller: function($routeParams, $scope, $rootScope, $location) {
 
+			$scope.order = '-title';
 
 			$scope.goToItem = function(post) {
 				// rootScope works thanks to
@@ -24,11 +25,15 @@ angular.module('blogList').
 				"comments" : [
 					{"id" : 1, "text" : "Nice book"},
 					{"id" : 2, "text" : "Another comment"}
-				]
+				],
+				image: "/img/1.jpg"
 			},
-				{title: "some title2", id: 2, description: "this is a book"},
-				{title: "some title3", id: 3, description: "this is a book"},
-				{title: "some title4", id: 4, description: "this is a book"},
+				{title: "some title2", id: 2, description: "this is a book",
+				image: "/img/1.jpg"},
+				{title: "some title3", id: 3, description: "this is a book",
+				image: "/img/1.jpg"},
+				{title: "some title4", id: 4, description: "this is a book",
+				image: "/img/1.jpg"},
 			]
 
 			$scope.blogItems = blogItems;

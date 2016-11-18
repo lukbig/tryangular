@@ -4,6 +4,7 @@ angular.module('try', [
     // external
     'ngResource',
     'ngRoute',
+    'angularUtils.directives.dirPagination',
 
     // internal
     'blogDetail',

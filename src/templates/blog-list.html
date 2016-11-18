@@ -24,12 +24,17 @@
 	<!-- </li>
 </ul> -->
 
+<select ng-model='order'>
+	<option value="title">A-Z</option>
+	<option value="-title">Z-A</option>
+</select>
+
 <span ng-if='blogItems.length == 0'>Posts coming soon!</span>
 
 <div class="row" ng-repeat='blogItems in colItems'>
-	<div class="{{cssClass}}" ng-repeat='item in blogItems | filter: query'>
+	<div class="{{cssClass}}" ng-repeat='item in blogItems | orderBy:order | filter: query'>
     <div class="thumbnail">
-      <img src="..." alt="...">
+      <img ng-src="{{item.image}}" alt="...">
       <div class="caption">
         <h3>{{item.title}}</h3>
         <p>{{item.description}}</p>

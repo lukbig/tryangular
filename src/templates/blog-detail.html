@@ -19,13 +19,24 @@
 	</div>
 </div>
 
-<ul>
+<!-- <ul>
 	<li ng-repeat='comment in post.comments | filter : query'>
 		{{comment.text}}
 		<a href='#' confirm-click="do you want to delete?" confirmed-click = 'deleteComment(comment)'>Confirm</a>
 		<a href='#' ng-click = 'deleteComment(comment)'>Delete</a>
 	</li>
+</ul> -->
+
+<ul>
+	<li dir-paginate = 'comment in post.comments | filter : query | itemsPerPage: 3 as mainComments'>
+		{{comment.text}}
+		<a href='#' confirm-click="do you want to delete?" confirmed-click = 'deleteComment(comment)'>Confirm</a>
+		<a href='#' ng-click = 'deleteComment(comment)'>Delete</a>
+	</li>
 </ul>
+<dir-pagination-controls ng-hide = 'query.length > 0'></dir-pagination-controls>
+
+<span ng-if='mainComments.length == 0'>No items found</span>
 
 <hr/>
 
