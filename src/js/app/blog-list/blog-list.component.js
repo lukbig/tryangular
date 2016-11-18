@@ -6,6 +6,14 @@ angular.module('blogList').
 		templateUrl: '/templates/blog-list.html',
 		controller: function($routeParams, $scope, $rootScope, $location) {
 
+			//search parameters
+			var q = $location.search().q;
+			if (q) {
+				$scope.query = q;
+				$scope.searchQuery = true;
+			}
+
+
 			$scope.order = '-title';
 
 			$scope.goToItem = function(post) {
@@ -47,6 +55,10 @@ angular.module('blogList').
 				if ($scope.query) {
 					$scope.loadinQuery = true;
 					$scope.cssClass = 'col-sm-12';
+					//search query from navbar
+					if($scope.query != q) {
+						$scope.searchQuery = false;
+					}
 				} else if ($scope.loadinQuery) {
 					setupColumns($scope.blogItems, 2);
 					$scope.loadinQuery = false;

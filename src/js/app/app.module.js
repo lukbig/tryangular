@@ -5,9 +5,11 @@ angular.module('try', [
     'ngResource',
     'ngRoute',
     'angularUtils.directives.dirPagination',
+    'ui.bootstrap',
 
     // internal
     'blogDetail',
     'blogList',
-    'confirmClick'
+    'confirmClick',
+    'tryNav'
 ]);

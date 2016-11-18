@@ -17,6 +17,9 @@ angular.module('try').
               when("/blog/:id", {
                   template: "<blog-detail></blog-detail>"
               }).
+              when("/blog", {
+                  template: "<blog-list></blog-list>"
+              }).
               // when("/blog/:id/:abc", {
               //     template: "<blog-list></blog-list>"
               // }).

@@ -3,7 +3,9 @@
 	<button ng-click='someClickTest()'>Click me!</button>
 </div>
 
-<h1>Blog List <small><a href="#" ng-click='changeCols(4)'>Change</a></small>
+<h1 ng-hide='searchQuery'>Blog List <small><a href="#" ng-click='changeCols(4)'>Change</a></small>
+</h1>
+<h1 ng-show='searchQuery'>Result for {{ query }} <small><a href="#" ng-click='changeCols(4)'>Change</a></small>
 </h1>
 <div class="row">
 	<div class="col-sm-6">

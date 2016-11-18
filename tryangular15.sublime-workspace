@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"q",
+				"query"
+			],
+			[
+				"searc",
+				"searchQuery"
+			],
+			[
 				"op",
 				"option\tTag"
 			],
@@ -55,43 +63,34 @@
 			"file": "src/index.html",
 			"settings":
 			{
-				"buffer_size": 1732,
+				"buffer_size": 1944,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/blog-list.html",
+			"file": "src/js/app/app.module.js",
 			"settings":
 			{
-				"buffer_size": 2014,
+				"buffer_size": 240,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/blog-detail.html",
+			"file": "src/js/app/utils/try-nav/try-nav.directive.js",
 			"settings":
 			{
-				"buffer_size": 1483,
+				"buffer_size": 641,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/app/blog-detail/blog-detail.component.js",
+			"file": "src/js/app/app.config.js",
 			"settings":
 			{
-				"buffer_size": 1667,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/js/app/blog-list/blog-list.component.js",
-			"settings":
-			{
-				"buffer_size": 2780,
+				"buffer_size": 876,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -137,21 +136,26 @@
 		"/home/bigos/soft/tryangular/src/js/app/blog-list",
 		"/home/bigos/soft/tryangular/src/js/app/core",
 		"/home/bigos/soft/tryangular/src/js/app/core/posts",
+		"/home/bigos/soft/tryangular/src/js/app/utils",
 		"/home/bigos/soft/tryangular/src/js/app/utils/confirm-click",
+		"/home/bigos/soft/tryangular/src/js/app/utils/try-nav",
 		"/home/bigos/soft/tryangular/src/js/external",
 		"/home/bigos/soft/tryangular/src/json",
 		"/home/bigos/soft/tryangular/src/templates"
 	],
 	"file_history":
 	[
-		"/home/bigos/soft/tryangular/config.ru",
+		"/home/bigos/soft/tryangular/src/js/app/blog-list/blog-list.component.js",
+		"/home/bigos/soft/tryangular/src/templates/blog-list.html",
+		"/home/bigos/soft/tryangular/src/templates/try-nav.html",
+		"/home/bigos/soft/tryangular/src/js/app/utils/try-nav/try-nav.module.js",
 		"/home/bigos/soft/tryangular/src/js/app/app.module.js",
-		"/home/bigos/soft/tryangular/src/js/app/core/posts/post.service.js",
 		"/home/bigos/soft/tryangular/src/templates/blog-detail.html",
+		"/home/bigos/soft/tryangular/src/js/app/blog-detail/blog-detail.component.js",
+		"/home/bigos/soft/tryangular/config.ru",
+		"/home/bigos/soft/tryangular/src/js/app/core/posts/post.service.js",
 		"/home/bigos/soft/tryangular/src/json/posts.json",
 		"/home/bigos/soft/tryangular/src/js/app/utils/confirm-click/confirm-click.directive.js",
-		"/home/bigos/soft/tryangular/src/js/app/blog-list/blog-list.component.js",
-		"/home/bigos/soft/tryangular/src/js/app/blog-detail/blog-detail.component.js",
 		"/home/bigos/soft/tryangular/src/js/app/utils/confirm-click/confirm-click.module.js",
 		"/home/bigos/soft/tryangular/src/js/app/blog-detail/blog-detail.module.js",
 		"/home/bigos/soft/tryangular/src/js/app/core/posts/post.module.js",
@@ -160,7 +164,6 @@
 		"/home/bigos/soft/tryangular/src/js/app/blog-list/blog-list.module.js",
 		"/home/bigos/soft/tryangular/src/index.html",
 		"/home/bigos/soft/tryangular/src/js/app/app.config.js",
-		"/home/bigos/soft/tryangular/src/templates/blog-list.html",
 		"/home/bigos/soft/tryangular/src/quicktips.md",
 		"/home/bigos/soft/tryangular/index.html",
 		"/home/bigos/soft/tryangular/.gitignore"
@@ -203,7 +206,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -212,15 +215,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1732,
+						"buffer_size": 1944,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								670,
-								670
+								1008,
+								1008
 							]
 						],
 						"settings":
@@ -229,7 +232,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 272.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -237,105 +240,47 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/templates/blog-list.html",
+					"file": "src/js/app/app.module.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2014,
+						"buffer_size": 240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1199,
-								1199
+								152,
+								152
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 306.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/templates/blog-detail.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1483,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								722,
-								722
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 306.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "src/js/app/blog-detail/blog-detail.component.js",
+					"buffer": 2,
+					"file": "src/js/app/utils/try-nav/try-nav.directive.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1667,
+						"buffer_size": 641,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								433,
-								433
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 102.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/js/app/blog-list/blog-list.component.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2780,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								339,
-								339
+								621,
+								621
 							]
 						],
 						"settings":
@@ -348,6 +293,36 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/js/app/app.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								269,
+								269
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
